@@ -104,7 +104,7 @@ Props) => {
           scope, // To tell apple we want the user name and emails fields in the response it sends us.
           redirectURI: redirect_uri, // As registered along with our service ID
           state: 'origin:web', // Any string of your choice that you may use for some logic. It's optional and you may omit it.
-          usePopup: true, // Important if we want to capture the data apple sends on the client side.
+          usePopup: false, // Important if we want to capture the data apple sends on the client side.
         };
         _window.AppleID.auth.init(options);
         setIsSdkLoaded(true);
